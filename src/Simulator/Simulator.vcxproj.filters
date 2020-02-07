@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="initializer">
+      <UniqueIdentifier>{85e9c019-aa31-483a-93f6-dda29dcf8f32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="boundary">
+      <UniqueIdentifier>{bf413141-7f66-4a13-bc5c-3a432539e0e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="solver">
+      <UniqueIdentifier>{4ca7da50-75c3-4dea-a86f-dad62be551af}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="mesh.cpp" />
+    <ClCompile Include="Solver.cpp" />
+    <ClCompile Include="simulator.cpp" />
+    <ClCompile Include="initializer\uniform_initializer.cpp">
+      <Filter>initializer</Filter>
+    </ClCompile>
+    <ClCompile Include="bounary\cube_boundary.cpp">
+      <Filter>boundary</Filter>
+    </ClCompile>
+    <ClCompile Include="solver\basic_solver.cpp">
+      <Filter>solver</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="parameter.h" />
+    <ClInclude Include="particle.h" />
+    <ClInclude Include="simulator.h" />
+    <ClInclude Include="initializer\IInitializer.h">
+      <Filter>initializer</Filter>
+    </ClInclude>
+    <ClInclude Include="initializer\uniform_initializer.h">
+      <Filter>initializer</Filter>
+    </ClInclude>
+    <ClInclude Include="bounary\cube_boundary.h">
+      <Filter>boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="bounary\IBoundary.h">
+      <Filter>boundary</Filter>
+    </ClInclude>
+    <ClInclude Include="solver\basic_solver.h">
+      <Filter>solver</Filter>
+    </ClInclude>
+    <ClInclude Include="solver\ISolver.h">
+      <Filter>solver</Filter>
+    </ClInclude>
+    <ClInclude Include="mesh.h" />
+  </ItemGroup>
+</Project>

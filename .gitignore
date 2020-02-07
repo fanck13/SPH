@@ -1,0 +1,10 @@
+.vs
+src/packages
+x64
+Debug
+Release
+Win32
+*.vcxproj.user
+*.pdb
+*.ilk
+*.exe
